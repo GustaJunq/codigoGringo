@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="en-US">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>GringoCode</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+  <div class="container">  
+    <!-- Substituí o título pela logo -->
+    <img src="logo.png" alt="codigoGringo" class="logo">  
+  
+    <textarea id="textInput" placeholder="Hello, i'm GringoCode, Don't use special characters on me!"></textarea>  
+  
+    <div class="controls">  
+      <label>  
+        Speed:  
+        <input type="range" id="speed" min="50" max="500" value="200">  
+        <span id="speedValue">200 ms</span>  
+      </label>  
+  
+      <label>  
+        Frequency:  
+        <input type="number" id="minFreq" value="500"> Hz  
+        <input type="number" id="maxFreq" value="800"> Hz  
+      </label>  
+  
+      <label>  
+        <input type="checkbox" id="loop"> Loop it  
+      </label>  
+    </div>  
+  
+    <button id="encodeBtn">Encode</button>  
+    <button id="decodeBtn">Decode</button>  
+    <button id="playBtn">Play</button>  
+    <button id="stopBtn">Stop</button>  
+  
+    <div id="display"></div>  
+  </div>  
+  
+  <script src="script.js"></script>  
+</body>  
+</html>
